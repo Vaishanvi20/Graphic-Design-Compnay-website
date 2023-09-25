@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B B Service</title>
+    <style>
+        *{
+ padding: 0;
+ margin: 0;
+ box-sizing: border-box;
+ font-family: sans-serif;
+ scroll-padding-top: 2rem;
+ scroll-behavior: smooth;
+}
+html{
+  overflow-x: hidden;
+}
+header{
+  width: 100%;
+  height: 15vh;
+  z-index: 1000;
+  position: sticky;
+  top: 0;
+  right: 0;
+  background:white;
+  border: gray solid 2px;
+} 
+
+.icon img{
+    width: 100px;
+}
+nav{
+  width: 100;
+  height: 100px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: black;
+  overflow:hidden;
+}
+.logo{
+   border-image-width: 10px;
+  font-size: 50px;
+  font-weight: bold;
+  letter-spacing: 5px;
+}
+#blue{
+    font-size: 30px;
+  color: black;
+}
+#l1{
+    font-size: 15px;
+}
+.menu a{
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px;
+  margin: 10px;
+}
+.menu a:first-child{
+  border-bottom: 1px solid #74b9ff;
+}
+.menu a:hover{
+ 
+  color: red;
+}
+
+        #red{
+            color: red;
+}
+#Payment h1{
+    padding-top: 25px;
+    text-align: center;
+     color: red;
+     font-size: 50px;
+}
+#Payment h4{
+    text-align: center;
+}
+#contact h1{
+  padding-top: 10px;
+  /* padding-left:700px; */
+  text-align: center;
+  font-size: 40px;
+}
+#contact h2{
+  text-align: center;
+  color: white;
+}
+
+.parent{
+  position: relative;
+  background-color: #000;
+}
+.parent::before{
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 0;
+  top:0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  opacity: 0.5;
+  background:url("images/download.png");
+  background-size: cover;
+}
+.text1{
+  position: relative;
+  width: 100%;
+  height: 280px;
+}
+iframe {
+            width: 660vh;
+            height: 60vh;
+        }
+.pay{
+    margin-left: 150px;
+    margin-right: 150px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+}
+.pay li{
+
+    font-weight: bold;
+
+}
+.btn1{
+  top: 50%;
+  left: 40%;
+  border: none;
+  position:relative;
+  background-color:rgb(9, 178, 245);
+  border-radius: 12px;
+  color: white;
+  padding: 15px 32px;
+  align-content:  center;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 0;
+  cursor: pointer;   
+}
+.pay a:hover{
+  background:rgb(66, 223, 66);
+  color: white;
+  border-color: white;
+}
+</style>
+</head>
+<body>
+    <header>
+        <nav>
+          <div class="icon">
+              <img src="images/images2.png">
+            </div>
+          <div class="logo">
+            <span id="blue">B B Art Services</span><br>
+            <h6 id="l1">Graphic Design Company</h6>
+          </div>
+          <div class="menu">
+           <a href="index.html">Home</a>
+           <a href="#Feature">Features</a>
+           <a href="#gallery">Gallary</a>
+           <a href="#contact">Contact</a>
+           <a href="payment.html">Payment</a>
+           <a href="Faq.html">FAQs</a>
+          </div>
+        </nav>
+      </header>
+      
+    <section id="Payment">
+        <h1>Payment</h1><br><br>
+        <h4>Customer can choose below mode for our payment</h4>
+        <br><br>
+        <div class="pay">
+        <li class="l2">Online Payment through Caredit/ Debit Card:</li><br><br>
+        <span id="a" style="font-weight:bold;">Note : </span>ipsum dolor sit amet consectetur adipisicing elit.
+         Voluptate fuga consequuntur, pariatur quos aspernatur
+         qui necessitatibus accusantium corporis recusandae tenetur quis sint maiores assumenda 
+         dolorum nam. Consequatur ipsum soluta qui. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+         Suscipit eum explicabo temporibus nisi labore beatae quaerat minus 
+         ipsam quod maiores? Aut doloremque eaque facilis eius reiciendis deserunt recusandae laborum iusto?
+         Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic debitis, inventore, dolore commodi fugit tenetur
+          nulla consequatur magnam expedita sequi aut at assumenda impedit,
+          illum voluptatem earum perspiciatis ullam libero?
+<br><br><br>
+Please click below button to Pay through Credit/Debit Card <br><br><br>
+<a href="#" class="btn1">Pay Using  Code</a>
+<br><br>
+<li>Electronic(Bank) Transfer:</li><br>
+
+<span> Please click  given below to send requesr note to our /finanace /department for Bank /details</span>
+<br> <br><br>
+<a href="#" class="btn1">Send Request Note</a> <br><br><br>
+<li>Advance Payment:</li><br>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa asperiores officia temporibus repellendus a 
+fugit, rerum nesciunt voluptas nisi neque! Reiciendis vero deserunt blanditiis vitae exercitationem tempore tenetur unde rerum. <br><br><br>
+</div>
+</section>
+<section id="contact">
+    <div class="parent">
+      <!-- <img src="images/download.jfif" alt=""> -->
+      <div class="text1">
+        <h1><span id="red">Contact Us</span></h1>
+        <br> <br> <br>
+        <h2>Email: support@bbartservices.com <br><br>
+          Phone: (+91) 91223565843
+        </h2>
+      </div>
+    </div>
+    <div>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d54814.48103954382!2d73.74806615345803!3d18.650123257292957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b724de0e9215%3A0x81c37bdf8c270e53!2sSEED%20Infotech%20-%20Chinchwad!5e1!3m2!1sen!2sin!4v1676030278491!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </section>
+</body>
+</html>

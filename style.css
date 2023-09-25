@@ -1,0 +1,455 @@
+*{
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    scroll-padding-top: 2rem;
+    }
+  html{
+    overflow-x: hidden;
+  }
+  header{
+    width: 100%;
+    height: 15vh;
+    z-index: 1000;
+    position: sticky;
+    top: 0;
+    right: 0;
+    background:white;
+    border: gray solid 2px;
+  } 
+  
+  .icon img{
+      width: 100px;
+  }
+  nav{
+    width: 100;
+    height: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: black;
+    overflow:hidden;
+  }
+  .logo{
+     border-image-width: 10px;
+    font-size: 50px;
+    font-weight: bold;
+    letter-spacing: 5px;
+  }
+  .nav-toggle{
+    display: none;
+  }
+  #blue{
+      font-size: 30px;
+    color: black;
+  }
+  #l1{
+      font-size: 15px;
+  }
+  .menu a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    margin: 10px;
+  }
+  .menu a:first-child{
+    border-bottom: 1px solid #74b9ff;
+  }
+  .menu a:hover{
+    color: red;
+  }
+  a.active,a:hover{
+    color: red;
+    transition: .5s;
+  }
+  #home {
+    width: 100px;
+  }
+  .img1{
+    width: 100%;
+    height: 10%;
+    background-size: cover;
+    background-position: center right;
+    background-repeat: no-repeat;
+    position: sticky;
+  }
+  .text{
+    padding: 10px;
+    background: url("images/gif2.gif");
+    background-size: cover;
+    background-position: center;
+    -webkit-backgroung-clip:text;
+    /* text-transform: uppercase; */
+    font-size:5rem;
+    font-weight:500;
+    font-family: fantasy;
+    color: white;
+    letter-spacing: 1px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    text-align: center;
+    text-decoration-thickness:1;
+  }
+  .button {
+    background-color:white;
+    border-radius: 12px;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 2px 2px;
+    cursor: pointer;
+  }
+  .text a:hover{
+    background:gray;
+    color: black;
+    border-style: hidden;
+  }
+  #Feature{
+    padding-left: 17%;
+    flex-wrap: wrap;
+  }
+  .container{
+      width: 1000px;
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+  }
+  
+  .container .card{
+      position: relative;
+      cursor: pointer;
+  }
+  
+  .container .card .face{
+      width: 300px;
+      height: 200px;
+      transition: 0.5s;
+  }
+  .container .card .face.face1{
+      position: relative;
+      background: #333;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 1;
+      transform: translateY(100px);
+  }
+  
+  .container .card:hover .face.face1{
+      background:black;
+      transform: translateY(0);
+  }
+  
+  .container .card .face.face1 .content{
+      opacity: 0.2;
+      transition: 0.5s;
+  }
+  
+  .container .card:hover .face.face1 .content{
+      opacity: 1;
+  }
+  
+  .container .card .face.face1 .content img{
+      align-content: center;
+      max-width: 100px;
+  }
+  
+  .container .card .face.face1 .content h3{
+      margin: 10px 0 0;
+      padding: 0;
+      color: #fff;
+      text-align: center;
+      font-size: 1.5em;
+  }
+  
+  .container .card .face.face2{
+      position: relative;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      box-sizing: border-box;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+      transform: translateY(-100px);
+  }
+  
+  .container .card:hover .face.face2{
+      transform: translateY(0);
+  }
+  
+  .container .card .face.face2 .content p{
+      margin: 0;
+      padding: 0;
+  }
+  
+  .container .card .face.face2 .content a{
+      margin: 15px 0 0;
+      display:  inline-block;
+      text-decoration: none;
+      font-weight: 900;
+      color: #333;
+      padding: 5px;
+      border: 1px solid #333;
+  }
+  
+  .container .card .face.face2 .content a:hover{
+      background: #333;
+      color: #fff;
+  }
+  .fixed-bg {
+    background-image: url("images/download.png");
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  #demo1{
+    padding: 100px 0px;
+  }
+  #red{
+    color: red;
+  }
+  .about-row{
+    color: white;
+    width: 100%;
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: center;
+  }
+  
+  .button2 {
+    position:relative;
+    background-color:white;
+    border-radius: 12px;
+    color: black;
+    padding-left: 20px;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 2px 2px;
+    cursor: pointer;
+  }
+  .about-right-col2{
+    width: 50%;
+    padding-left: 20px;
+    padding-top: 30px;
+    flex-basis: 50%;
+  }
+  .about-left-col2{
+    flex-basis: 50%;
+    text-align: center;
+  }
+  /* .about-left-col2 img{
+    background-attachment: fixed;
+    width: 100%;
+    height: 90%;
+    background-size: cover;
+    background-position: center right;
+    background-repeat: no-repeat;
+    position: sticky; 
+  } */
+  .about-right-col2{
+    background-color: #333;
+    max-width: 755px;
+    /* max-height: 100vh; */
+    padding-left: 20px;
+    margin: auto;
+  }
+  
+  .about-right-col2 h1{
+    text-align: center;
+    font-size: 50px;
+  }
+  .about-right-col2 p{
+    font-size: 20px;
+    text-align: center;
+    text-align: justify;
+    margin: 15px 0px;
+  }
+  #b2{
+    align-items: center;
+    padding-left: 200px;
+  }
+  #b1{
+    align-items: center;
+    padding-left: 80px;
+  }
+  .btn1{
+    position:relative;
+    background-color:#333;
+    border-radius: 12px;
+    color: white;
+    border:solid white;
+    padding-left: 20px;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 2px 2px;
+    cursor: pointer;
+  }
+  .about-right-col2 a:hover{
+    background: red;
+    color: white;
+    border: none;
+  }
+  .blocks{
+    display: flex;
+    width: 100%;
+    height:100%;
+  }
+  .diva{
+    border: solid white 1px;
+    border-radius: 15px;
+    padding-top: 10px;
+    padding-left: 40px;
+    margin-left: 77px;
+    margin-right: 125px;
+    width: 100%;
+    height: 300px;
+    background-color:#333;
+    display: block;
+  }
+  .divb{
+    border: solid white 1px;
+    border-radius: 15px;
+    display: none;
+    padding-top: 10px;
+    padding-left: 40px;
+    margin-left: 77px;
+    margin-right: 110px;
+    width:100%;
+    height: 300px;
+    background-color: #333;
+  }
+  .divc{
+    border: solid white 1px;
+    border-radius: 15px;
+    padding-top: 10px;
+    padding-left: 40px;
+    display: none;
+    margin-left: 77px;
+    margin-right: 110px;
+    width:100%;
+    height: 300px;
+    background-color: #333;
+  }
+  li{
+     margin-left: 50px;
+     font-size: 15px;
+  }
+  #demo2{
+    padding-left: 17%;
+  }
+  #demo2 h1{
+    padding-left:400px;
+    font-size: 40px;
+    /* text-align:center; */
+  
+  }  
+  #gallery h1{
+    padding-left:700px;
+    font-size: 40px;
+  }
+  .ff{
+    cursor: pointer;
+    will-change:transform;
+    position: relative;
+    display:inline-block;
+    overflow-x:scroll; 
+    overflow-y: hidden;
+  }
+  .row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+     flex-direction: row;
+     display: flex;
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+  }
+  
+  .column img {
+    border: solid black 2px;
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+    height: 30vh;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+   @media screen and (max-width: 800px) {
+    .column {
+      -ms-flex: 50%;
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+   @media screen and (max-width: 600px) {
+    .column {
+      -ms-flex: 100%;
+      flex: 100%;
+      max-width: 100%;
+    }
+  }  
+  #contact h1{
+    padding-top: 10px;
+    padding-left:650px;
+    /* text-align: center; */
+    font-size: 40px;
+  }
+  #contact h2{
+    text-align: center;
+    color: white;
+  }
+  .parent{
+    position: relative;
+    background-color: #000;
+  }
+  .parent::before{
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    opacity: 0.5;
+    background:url("images/download.png");
+    background-size: cover;
+  }
+  .text1{
+    position: relative;
+    width: 100%;
+    height: 280px;
+  }
+  iframe {
+              width: 660vh;
+              height: 60vh;
+          }
